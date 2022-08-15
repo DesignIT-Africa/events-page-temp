@@ -58,6 +58,7 @@ body {
     line-height: 40px;
     color: var(--text-color);
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #epage-ctn-02-carousel {
@@ -67,7 +68,6 @@ body {
 
 .epage-carousel-item {
     /* You might remove this */
-    height: 500px;
     cursor: pointer;
 
 }
@@ -311,6 +311,10 @@ hr {
         margin-bottom: 100px;
         justify-content: center;
     }
+    #epage-ctn-02-carousel {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 940px) {}
@@ -324,11 +328,22 @@ hr {
 @media (max-width: 600px) {
     #epage-ctn-01-text {
         width: 50%;
-        padding: 20px;
+        padding: 15px;
         min-width: 300px;
         font-size: 18px;
-        line-height: 20px;
+        line-height: 24px;
     }
+    #epage-ctn-01-svg {
+        margin-top: -200px;
+        margin-bottom: -200px;
+        transform: scale(0.4);
+    }
+    #epage-ctn-02-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    
 }
 
 @media (max-width: 500px) {}
