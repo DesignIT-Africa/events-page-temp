@@ -127,18 +127,30 @@
     var owl = $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 50,
-      nav: true
-      /*responsive:{
+      nav: true,
+      responsive:{
           0:{
               items:1
           },
           600:{
               items:1
           },
+          768:{
+              items:2
+          },
+          999:{
+              items:1
+          },
           1000:{
-              items:3
+              items: 2
+          },
+          1440:{
+              items: 3
+          },
+          2000:{
+              items: 6
           }
-      }*/
+      }
     });
 
     function owlnext(e) { e.stopPropagation(); owl.trigger('next.owl.carousel');}

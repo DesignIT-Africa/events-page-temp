@@ -171,13 +171,13 @@ ol.carousel-indicators li.active {
     margin: auto;
 }
 .owl-item {
-    min-width: 350px;
+    min-width: 300px;
     max-width: 500px;
 }
 
 .epage-ctn-03-carousel-item {
     width: 100%;
-    min-width: 350px;
+    min-width: 300px;
     max-width: 500px;
     height: max-content;
     border-radius: 15px;
@@ -304,6 +304,9 @@ hr {
 }
 /* SMALLER SCREENS */
 
+@media (max-width: 2000px) {
+
+}
 @media (max-width: 1000px) {
     #epage-ctn-01 {
         grid-template-columns: 1fr;
@@ -314,6 +317,22 @@ hr {
     #epage-ctn-02-carousel {
         width: 80%;
         margin: auto;
+    }
+    #epage-ctn-03{
+        padding: 5px;
+    }
+    #epage-ctn-03-carousel-cover{
+        display: none;
+    }
+    #epage-ctn-03-carousel {
+        margin: auto;
+        padding: 0;
+        margin-top: 55px;
+        z-index: 1;
+        opacity: 1;
+    }
+    .epage-ctn-03-carousel-text-content{
+        padding-right: 30px;
     }
 }
 
@@ -338,9 +357,21 @@ hr {
         margin-bottom: -200px;
         transform: scale(0.4);
     }
-    #epage-ctn-02-title {
+    #epage-ctn-02-title, #epage-ctn-03-title, #epage-ctn-04-title {
         font-size: 28px;
         line-height: 30px;
+    }
+    .epage-ctn-03-carousel-foot-date {
+        font-size: 11px;
+    }
+    .epage-ctn-03-carousel-text-content{
+        padding-right: 0;
+    }
+    .epage-ctn-03-carousel-foot-btn {
+        width: 70px;
+        height: 28px;
+        font-size: 12px;
+
     }
 
     
