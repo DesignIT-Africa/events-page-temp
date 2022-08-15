@@ -1,0 +1,321 @@
+:root {
+    --main-theme: #008db9;
+    --text-color: #b92c00;
+    --text-color2: #fff;
+
+}
+
+body {
+    font-family: Poppins;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.epage-body {
+    background: linear-gradient(to bottom, var(--main-theme), #fff), linear-gradient(to top, #000, var(--main-theme));
+}
+
+#epage-ctn-01 {
+    padding-left: 7%;
+    padding-right: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    height: max-content;
+}
+
+#epage-ctn-01-text {
+    font-family: Poppins;
+    width: 70%;
+    min-width: 350px;
+    height: max-content;
+    margin: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--text-color2);
+}
+
+#epage-ctn-01-svg {
+    margin-top: -100px;
+    margin-bottom: -100px;
+    transform: scale(0.5)
+}
+
+#epage-ctn-02 {
+    height: max-content;
+}
+
+#epage-ctn-02-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#epage-ctn-02-carousel {
+    width: 50%;
+    margin: auto;
+}
+
+.epage-carousel-item {
+    /* You might remove this */
+    height: 500px;
+    cursor: pointer;
+
+}
+
+#epage-ctn-02-carousel-controls {
+    margin-top: 70px;
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+}
+
+#carousel-control-prev-icon img,
+#carousel-control-next-icon img {
+    transform: scale(0.4);
+    padding: 10px;
+}
+
+.ndc {
+    text-decoration: none;
+}
+
+ol.carousel-indicators {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 62% 38% 19% 81% / 42% 49% 51% 58%;
+    border: 0;
+    background-color: var(--main-theme);
+
+}
+
+ol.carousel-indicators li.active {
+    background-color: var(--text-color);
+}
+
+.carousel-texte {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#epage-ctn-03 {
+    margin-top: 140px;
+    height: max-content;
+    opacity: 1;
+}
+
+#epage-ctn-03-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--main-theme);
+    text-align: center;
+    margin-bottom: 21px;
+}
+#epage-ctn-03-carousel-ctn {
+    position: relative;
+    height: max-content;
+}
+#epage-ctn-03-carousel {
+    margin: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 55px;
+    z-index: 1;
+    opacity: 1;
+}
+#epage-ctn-03-carousel-cover{
+    /* TODO: Opacity nor working, possible fixes?? */
+    backdrop-filter: opacity(0.4) blur(2.8px);
+    z-index: 9;
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 55px;
+    display: flex;
+    justify-content: center;
+}
+#epage-ctn-03-carousel-cover-icon{
+    display: block;
+    margin: auto;
+}
+.owl-item {
+    min-width: 350px;
+    max-width: 500px;
+}
+
+.epage-ctn-03-carousel-item {
+    width: 100%;
+    min-width: 350px;
+    max-width: 500px;
+    height: max-content;
+    border-radius: 15px;
+    background-color: var(--text-color2);
+    padding: 0;
+    overflow: hidden;
+}
+
+.epage-ctn-03-carousel-img {
+    height: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.epage-ctn-03-carousel-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.epage-ctn-03-carousel-img img:hover {
+    transform: scale(1.4);
+    transition: all 0.49s ease-in-out;
+}
+
+.epage-ctn-03-carousel-text {
+    padding: 30px;
+    padding-bottom: 15px;
+}
+
+.epage-ctn-03-carousel-text-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+
+    color: #263B5D
+}
+
+.epage-ctn-03-carousel-text-content {
+    padding-right: 70px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #263B5D;
+}
+
+hr {
+    width: calc(100% - 60px);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.epage-ctn-03-carousel-foot {
+    padding: 10px 50px 20px 50px;
+    display: inline-flex;
+    width: 100%;
+
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.epage-ctn-03-carousel-foot-date {
+    display: inline-flex;
+
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.epage-ctn-03-carousel-foot-date img {
+    width: 24px;
+    height: 24px;
+}
+
+.epage-ctn-03-carousel-foot-btn {
+    float: right;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    background: var(--text-color);
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    color: var(--text-color2);
+}
+.epage-ctn-03-carousel-foot-btn:hover {
+    background: var(--main-theme);
+    transition: all 0.5s ease;
+}
+#epage-ctn-04{
+    margin-top: 100px;
+}
+#epage-ctn-04-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--main-theme);
+    text-align: center;
+    margin-bottom: 21px;
+}
+/* SMALLER SCREENS */
+
+@media (max-width: 1000px) {}
+
+@media (max-width: 940px) {}
+
+@media (max-width: 900px) {}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 700px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 460px) {}
+
+@media (max-width: 330px) {}
