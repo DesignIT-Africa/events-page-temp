@@ -22,6 +22,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"
+    integrity="sha512-GQz6nApkdT7cWN1Cnj/DOAkyfzNOoq+txIhSEK1G4HTCbSHVGpsrvirptbAP60Nu7qbw0+XlAAPGUmLU2L5l4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="events.css">
   <link rel="stylesheet" href="main.css">
@@ -90,30 +94,35 @@
         <p id="epage-ctn-03-title">Previous Events</p>
 
         <div id="epage-ctn-03-carousel-ctn">
-        <div id="epage-ctn-03-carousel" class="owl-carousel owl-theme">
-          <!-- TODO: Use Django to automate Previous events -->
-          <div class="epage-ctn-03-carousel-item">
-            <div class="epage-ctn-03-carousel-img"><img src="left 1.jpg" /></div>
-            <div class="epage-ctn-03-carousel-text">
-              <p class="epage-ctn-03-carousel-text-title">TECH COHORT 1.0</p>
-              <p class="epage-ctn-03-carousel-text-content">Laboris exercitation nostrud ipsum ex culpa exercitation quis ipsum est. Laboris exercitation nostrud ipsum</p>
-            </div>
-            <hr class="solid">
-            <div class="epage-ctn-03-carousel-foot">
-              <div class="epage-ctn-03-carousel-foot-date">
-                <img style="width: 24px; height: 24px;" width="24px" height="24px" class="epage-ctn-03-carousel-foot-calendar" src="calendar.svg"/>
-                <b>22-05-2022</b>
+          <div id="epage-ctn-03-carousel" class="owl-carousel owl-theme">
+            <!-- TODO: Use Django to automate Previous events -->
+            <div class="epage-ctn-03-carousel-item item">
+              <div class="epage-ctn-03-carousel-img"><img src="left 1.jpg" /></div>
+              <div class="epage-ctn-03-carousel-text">
+                <p class="epage-ctn-03-carousel-text-title">TECH COHORT 1.0</p>
+                <p class="epage-ctn-03-carousel-text-content">Laboris exercitation nostrud ipsum ex culpa exercitation
+                  quis ipsum est. Laboris exercitation nostrud ipsum</p>
               </div>
-              <button onclick="window.location.href = //Link to page " class="epage-ctn-03-carousel-foot-btn">Details</button>
-              
+              <hr class="solid">
+              <div class="epage-ctn-03-carousel-foot">
+                <div class="epage-ctn-03-carousel-foot-date">
+                  <img style="width: 24px; height: 24px;" width="24px" height="24px"
+                    class="epage-ctn-03-carousel-foot-calendar" src="calendar.svg" />
+                  <b>22-05-2022</b>
+                </div>
+                <button onclick="window.location.href = //Link to page "
+                  class="epage-ctn-03-carousel-foot-btn">Details</button>
+
+              </div>
             </div>
+            <!-- Dots would be visible when there is more than one item. -->
+          </div>
+
+          <div id="epage-ctn-03-carousel-cover">
+            <img id="epage-ctn-03-carousel-cover-icon" onclick="owlnext(event)" src="right.svg" width="70px"
+              height="70px" />
           </div>
         </div>
-
-        <div id="epage-ctn-03-carousel-cover" ondrag="(event) => {e.preventDefault; e.stopPropagation;}">
-        <img id="epage-ctn-03-carousel-cover-icon" onclick="owlnext(event)" src="right.svg" width="70px" height="70px"/>
-        </div>
-      </div>
       </div>
 
       <div id="epage-ctn-04">
@@ -127,33 +136,37 @@
     var owl = $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 50,
-      nav: true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:1
-          },
-          768:{
-              items:2
-          },
-          999:{
-              items:1
-          },
-          1000:{
-              items: 2
-          },
-          1440:{
-              items: 3
-          },
-          2000:{
-              items: 6
-          }
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        999: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        },
+        1366: {
+          margin: 30
+        },
+        1440: {
+          items: 3
+        },
+        2000: {
+          items: 6
+        }
       }
     });
 
-    function owlnext(e) { e.stopPropagation(); owl.trigger('next.owl.carousel');}
+    function owlnext(e) { e.stopPropagation(); owl.trigger('next.owl.carousel'); }
   </script>
 </body>
 

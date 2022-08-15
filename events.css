@@ -142,10 +142,12 @@ ol.carousel-indicators li.active {
     text-align: center;
     margin-bottom: 21px;
 }
+
 #epage-ctn-03-carousel-ctn {
     position: relative;
     height: max-content;
 }
+
 #epage-ctn-03-carousel {
     margin: auto;
     padding-left: 55px;
@@ -154,7 +156,8 @@ ol.carousel-indicators li.active {
     z-index: 1;
     opacity: 1;
 }
-#epage-ctn-03-carousel-cover{
+
+#epage-ctn-03-carousel-cover {
     /* TODO: Opacity nor working, possible fixes?? */
     backdrop-filter: opacity(0.4) blur(2.8px);
     z-index: 9;
@@ -165,20 +168,23 @@ ol.carousel-indicators li.active {
     right: 55px;
     display: flex;
     justify-content: center;
+    pointer-events: none;
 }
-#epage-ctn-03-carousel-cover-icon{
+
+#epage-ctn-03-carousel-cover-icon {
     display: block;
     margin: auto;
 }
+
 .owl-item {
     min-width: 300px;
-    max-width: 500px;
+    max-width: 420px;
 }
 
 .epage-ctn-03-carousel-item {
     width: 100%;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 420px;
     height: max-content;
     border-radius: 15px;
     background-color: var(--text-color2);
@@ -285,13 +291,16 @@ hr {
 
     color: var(--text-color2);
 }
+
 .epage-ctn-03-carousel-foot-btn:hover {
     background: var(--main-theme);
     transition: all 0.5s ease;
 }
-#epage-ctn-04{
+
+#epage-ctn-04 {
     margin-top: 100px;
 }
+
 #epage-ctn-04-title {
     font-family: 'Poppins';
     font-style: normal;
@@ -302,10 +311,21 @@ hr {
     text-align: center;
     margin-bottom: 21px;
 }
-/* SMALLER SCREENS */
+
+/* SCREENS */
 
 @media (max-width: 2000px) {
 
+}
+
+@media (max-width: 1366px) {
+    .owl-item {
+        max-width: 470px;
+    }
+    
+    .epage-ctn-03-carousel-item {
+        max-width: 410px;
+    }
 }
 @media (max-width: 1000px) {
     #epage-ctn-01 {
@@ -314,16 +334,20 @@ hr {
         margin-bottom: 100px;
         justify-content: center;
     }
+
     #epage-ctn-02-carousel {
         width: 80%;
         margin: auto;
     }
-    #epage-ctn-03{
+
+    #epage-ctn-03 {
         padding: 5px;
     }
-    #epage-ctn-03-carousel-cover{
+
+    #epage-ctn-03-carousel-cover {
         display: none;
     }
+
     #epage-ctn-03-carousel {
         margin: auto;
         padding: 0;
@@ -331,18 +355,11 @@ hr {
         z-index: 1;
         opacity: 1;
     }
-    .epage-ctn-03-carousel-text-content{
+
+    .epage-ctn-03-carousel-text-content {
         padding-right: 30px;
     }
 }
-
-@media (max-width: 940px) {}
-
-@media (max-width: 900px) {}
-
-@media (max-width: 800px) {}
-
-@media (max-width: 700px) {}
 
 @media (max-width: 600px) {
     #epage-ctn-01-text {
@@ -352,21 +369,27 @@ hr {
         font-size: 18px;
         line-height: 24px;
     }
+
     #epage-ctn-01-svg {
         margin-top: -200px;
         margin-bottom: -200px;
         transform: scale(0.4);
     }
-    #epage-ctn-02-title, #epage-ctn-03-title, #epage-ctn-04-title {
+
+    #epage-ctn-02-title,
+    #epage-ctn-03-title,
+    #epage-ctn-04-title {
         font-size: 28px;
         line-height: 30px;
     }
     .epage-ctn-03-carousel-foot-date {
         font-size: 11px;
     }
-    .epage-ctn-03-carousel-text-content{
+
+    .epage-ctn-03-carousel-text-content {
         padding-right: 0;
     }
+
     .epage-ctn-03-carousel-foot-btn {
         width: 70px;
         height: 28px;
@@ -374,11 +397,5 @@ hr {
 
     }
 
-    
+
 }
-
-@media (max-width: 500px) {}
-
-@media (max-width: 460px) {}
-
-@media (max-width: 330px) {}
