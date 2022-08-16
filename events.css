@@ -317,6 +317,7 @@ hr {
 #epage-ctn-05{
     width: 80%;
     margin: auto;
+    margin-top: 100px;
 }
 .event-schedule p,
 .event-blog p {
@@ -341,9 +342,9 @@ hr {
     justify-content: center;
 }
 
-.esbd img {
-    width: 100%;
-    max-width: 900px;
+.esbd iframe {
+    width: 70vw;
+    height: 600px;
 }
 
 .eb-blog-box {
@@ -498,6 +499,10 @@ p.ebt-maintext {
     .epage-ctn-03-carousel-text-content {
         padding-right: 30px;
     }
+    .esbd iframe {
+        width: 80vw;
+        height: 550px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -548,6 +553,10 @@ p.ebt-maintext {
     }
     .ebt-maintext, .read-more p, .blog-date p{
         font-size: 12px;
+    }
+    .esbd iframe {
+        width: 100vw;
+        height: 450px;
     }
 
 
