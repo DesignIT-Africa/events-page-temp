@@ -67,7 +67,7 @@ body {
 }
 
 .epage-carousel-item {
-    /* You might remove this */
+    /* You might want to linit the size */
     cursor: pointer;
 
 }
@@ -159,7 +159,7 @@ ol.carousel-indicators li.active {
 
 #epage-ctn-03-carousel-cover {
     /* TODO: Opacity nor working, possible fixes?? */
-    backdrop-filter: opacity(0.4) blur(2.8px);
+    backdrop-filter: grayscale(-50%);
     z-index: 9;
     width: 250px;
     height: 100%;
@@ -336,17 +336,18 @@ hr {
     }
 
     #epage-ctn-02-carousel {
-        width: 80%;
+        width: calc(100% - 20px);
         margin: auto;
     }
 
     #epage-ctn-03 {
-        padding: 5px;
+        padding: 10px;
     }
 
     #epage-ctn-03-carousel-cover {
         display: none;
     }
+    
 
     #epage-ctn-03-carousel {
         margin: auto;
@@ -371,9 +372,9 @@ hr {
     }
 
     #epage-ctn-01-svg {
-        margin-top: -200px;
-        margin-bottom: -200px;
-        transform: scale(0.4);
+        margin-top: -150px;
+        margin-bottom: -150px;
+        transform: scale(0.5);
     }
 
     #epage-ctn-02-title,
@@ -382,6 +383,7 @@ hr {
         font-size: 28px;
         line-height: 30px;
     }
+    
     .epage-ctn-03-carousel-foot-date {
         font-size: 11px;
     }
@@ -391,8 +393,6 @@ hr {
     }
 
     .epage-ctn-03-carousel-foot-btn {
-        width: 70px;
-        height: 28px;
         font-size: 12px;
 
     }
