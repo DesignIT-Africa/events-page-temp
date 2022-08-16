@@ -389,6 +389,11 @@ hr {
 .blog-type:hover, .read-more:hover {
 text-decoration: none;
 }
+.blog-type p:hover, .read-more p:hover, .read-more img:hover {
+    text-decoration: none;
+    color: var(--main-theme);
+    transition: all 0.4s ease;
+    }
 
 .ebb-texts {
     padding: 20px 25px 30px 25px;
@@ -529,6 +534,20 @@ p.ebt-maintext {
         width: 80px;
         font-size: 12px;
 
+    }
+    #epage-ctn-05{
+        width: 90%;
+        margin: auto;
+    }
+    .eb-body{
+        padding-top: 0;
+    }
+    .ebb{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ebt-maintext, .read-more p, .blog-date p{
+        font-size: 12px;
     }
 
 
