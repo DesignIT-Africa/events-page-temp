@@ -114,7 +114,7 @@
                   class="epage-ctn-03-carousel-foot-btn">Details</button>
 
               </div>
-            </div> 
+            </div>
 
 
             <!-- Dots would be visible and the next button would work when there is more than one item. -->
@@ -128,62 +128,133 @@
 
       <div id="epage-ctn-04">
         <p id="epage-ctn-04-title">Event Schedule</p>
-        <!-- <div>Integrate Calendar API</div> -->
+        <div><iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Africa%2FLagos&showTitle=0&showPrint=0&src=ZGVzaWduaXRuaWdlcmlhQGdtYWlsLmNvbQ&src=ZW4uY2hyaXN0aWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ua2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uaXNsYW1pYyNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%237CB342&color=%234285F4&color=%23F6BF26"
+            style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+
+      <div id="epage-ctn-05">
+        <div class="event-blog">
+          <div class="eb-body">
+            <div class="ebb">
+              <div class="eb-blog-box">
+               <div class="eb-blog-box-img-c"> <img class="eb-blog-box-descimg" width="12px" height="12px" src="left 1.jpg" alt=""></div>
+                <a href="#" class="blog-type">
+                  <img src="highlight.svg" alt="">
+                  <p>ARTICLES</p>
+                </a>
+                <div class="ebb-texts">
+                  <div class="ebbt">
+                    <a href="#" class="ebt-head">
+                      <p>TECH-A-TOUR 1.0</p>
+                    </a>
+                    <p class="ebt-maintext">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis libero ac aliquet nibh et enim
+                      at eget aenean diam morbi morbi. Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis
+                      libero ac aliquet nibh et enim at eget aenean diam morbi
+                      morbi.
+                    </p>
+                  </div>
+                  <div class="ebt-belowtext">
+                    <a href="#" class="read-more">
+                      <p>READ MORE</p>
+                      <img src="moree.svg" alt="">
+                    </a>
+                    <div class="blog-date">
+                      <p>DECEMBER 23, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ebb">
+              <div class="eb-blog-box">
+                <div class="eb-blog-box-img-c"> <img class="eb-blog-box-descimg" width="12px" height="12px" src="left 1.jpg" alt=""></div>
+                <a href="#" class="blog-type">
+                  <img src="highlight.svg" alt="">
+                  <p>ARTICLES</p>
+                </a>
+                <div class="ebb-texts">
+                  <div class="ebbt">
+                    <a href="#" class="ebt-head">
+                      <p>WHAT IS GREEN TECH AND WHY IS IT IMPORTANT</p>
+                    </a>
+                    <p class="ebt-maintext">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis libero ac aliquet nibh et enim
+                      at eget aenean diam morbi morbi. Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis
+                      libero ac aliquet nibh et enim at eget aenean diam morbi
+                      morbi.
+                    </p>
+                  </div>
+                  <div class="ebt-belowtext">
+                    <a href="#" class="read-more">
+                      <p>READ MORE</p>
+                      <img src="moree.svg" alt="">
+                    </a>
+                    <div class="blog-date">
+                      <p>DECEMBER 29, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
-    </div>
-  </div>
-  <script>
-    var owl = $('.owl-carousel').owlCarousel({
-      loop: false,
-      margin: 50,
-      nav: false,
-      dots: true,
-      responsive: {
-        0: {
-          items: 1,
-          margin: 0
-        },
-        600: {
-          items: 1,
-          margin: 0
-        },
-        768: {
-          items: 2
-        },
-        999: {
-          items: 1,
-          margin: 0
-        },
-        1000: {
-          items: 2
-        },
-        1366: {
-          margin: 30
-        },
-        1440: {
-          items: 3
-        },
-        2000: {
-          items: 6
-        }
-      }
-    });
+      
+      <script>
+        var owl = $('.owl-carousel').owlCarousel({
+          loop: false,
+          margin: 50,
+          nav: false,
+          dots: true,
+          responsive: {
+            0: {
+              items: 1,
+              margin: 0
+            },
+            600: {
+              items: 1,
+              margin: 0
+            },
+            768: {
+              items: 2
+            },
+            999: {
+              items: 1,
+              margin: 0
+            },
+            1000: {
+              items: 2
+            },
+            1366: {
+              margin: 30
+            },
+            1440: {
+              items: 3
+            },
+            2000: {
+              items: 6
+            }
+          }
+        });
 
-    $('#epage-ctn-03-carousel-cover-icon').click(function () {
-      owl.trigger('next.owl.carousel');
-    });
+        $('#epage-ctn-03-carousel-cover-icon').click(function () {
+          owl.trigger('next.owl.carousel');
+        });
 
-    $(document).ready(function () {
-      var count = $(".owl-stage").children().length;
-      if (count < 3) {
-        $("#epage-ctn-03-carousel-cover").hide();
-        var carousel = owl.data('owl.carousel');
-        carousel.options.center = true;
-        owl.trigger('refresh.owl.carousel');
-      }
-    });
-  </script>
+        $(document).ready(function () {
+          var count = $(".owl-stage").children().length;
+          if (count < 3) {
+            $("#epage-ctn-03-carousel-cover").hide();
+            var carousel = owl.data('owl.carousel');
+            carousel.options.center = true;
+            owl.trigger('refresh.owl.carousel');
+          }
+        });
+      </script>
 </body>
 
 </html>
