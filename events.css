@@ -159,7 +159,7 @@ ol.carousel-indicators li.active {
 
 #epage-ctn-03-carousel-cover {
     /* TODO: Opacity nor working, possible fixes?? */
-    backdrop-filter: grayscale(-50%);
+    backdrop-filter: grayscale(100%);
     z-index: 9;
     width: 250px;
     height: 100%;
@@ -172,6 +172,8 @@ ol.carousel-indicators li.active {
 }
 
 #epage-ctn-03-carousel-cover-icon {
+    pointer-events: all;
+    z-index: 19;
     display: block;
     margin: auto;
 }
@@ -393,6 +395,7 @@ hr {
     }
 
     .epage-ctn-03-carousel-foot-btn {
+        width: 80px;
         font-size: 12px;
 
     }

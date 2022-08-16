@@ -115,12 +115,13 @@
 
               </div>
             </div>
-            <!-- Dots would be visible when there is more than one item. -->
+
+
+            <!-- Dots would be visible and the next button would work when there is more than one item. -->
           </div>
 
           <div id="epage-ctn-03-carousel-cover">
-            <img id="epage-ctn-03-carousel-cover-icon" onclick="owlnext(event)" src="right.svg" width="70px"
-              height="70px" />
+            <img id="epage-ctn-03-carousel-cover-icon" onload="null" src="right.svg" width="70px" height="70px" />
           </div>
         </div>
       </div>
@@ -134,7 +135,7 @@
   </div>
   <script>
     var owl = $('.owl-carousel').owlCarousel({
-      loop: true,
+      loop: false,
       margin: 50,
       nav: false,
       dots: true,
@@ -166,7 +167,19 @@
       }
     });
 
-    function owlnext(e) { e.stopPropagation(); owl.trigger('next.owl.carousel'); }
+    $('#epage-ctn-03-carousel-cover-icon').click(function () {
+      owl.trigger('next.owl.carousel');
+    });
+
+    $(document).ready(function () {
+      var count = $(".owl-stage").children().length;
+      if (count < 3) {
+        $("#epage-ctn-03-carousel-cover").hide();
+        var carousel = owl.data('owl.carousel');
+        carousel.options.center = true;
+        owl.trigger('refresh.owl.carousel');
+      }
+    });
   </script>
 </body>
 
