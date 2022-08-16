@@ -159,7 +159,7 @@ ol.carousel-indicators li.active {
 
 #epage-ctn-03-carousel-cover {
     /* TODO: Opacity nor working, possible fixes?? */
-    backdrop-filter: grayscale(100%);
+    backdrop-filter: blur(0.8px); /* Used blur instead of opacity */
     z-index: 9;
     width: 250px;
     height: 100%;
