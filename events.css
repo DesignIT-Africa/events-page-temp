@@ -301,6 +301,7 @@ hr {
 
 #epage-ctn-04 {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #epage-ctn-04-title {
@@ -343,8 +344,8 @@ hr {
 }
 
 .esbd iframe {
-    width: 70vw;
-    height: 600px;
+    width: 63vw;
+    height: 500px;
 }
 
 .eb-blog-box {
