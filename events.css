@@ -27,21 +27,21 @@ body {
 
 #epage-ctn-01-text {
     font-family: Poppins;
-    width: 70%;
+    width: 90%;
     min-width: 350px;
     height: max-content;
     margin: auto;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 35px;
     color: var(--text-color2);
 }
 
-#epage-ctn-01-svg {
+#epage-ctn-01-image {
     margin-top: -100px;
     margin-bottom: -100px;
-    transform: scale(0.5);
+    transform: scale(0.8);
     display: flex;
     justify-content: center;
 }
@@ -54,7 +54,7 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 40px;
     color: var(--text-color);
     text-align: center;
@@ -136,7 +136,7 @@ ol.carousel-indicators li.active {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 40px;
     color: var(--main-theme);
     text-align: center;
@@ -157,25 +157,68 @@ ol.carousel-indicators li.active {
     opacity: 1;
 }
 
-#epage-ctn-03-carousel-cover {
-    /* TODO: Opacity nor working, possible fixes?? */
+#epage-ctn-03-carousel-cover-left {
     backdrop-filter: blur(0.8px); /* Used blur instead of opacity */
     z-index: 9;
-    width: 250px;
+    width: 50px;
     height: 100%;
     position: absolute;
     top: 0;
-    right: 55px;
+    left: 15px;
     display: flex;
     justify-content: center;
     pointer-events: none;
 }
 
-#epage-ctn-03-carousel-cover-icon {
+#epage-ctn-03-carousel-cover-right {
+    backdrop-filter: blur(0.8px); /* Used blur instead of opacity */
+    z-index: 9;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+#epage-ctn-03-carousel-cover-left-icon {
     pointer-events: all;
     z-index: 19;
     display: block;
     margin: auto;
+    background-color: var(--text-color);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#epage-ctn-03-carousel-cover-right-icon {
+    pointer-events: all;
+    z-index: 19;
+    display: block;
+    margin: auto;
+    background-color: var(--text-color);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .owl-item {
@@ -273,9 +316,8 @@ hr {
     font-size: 12px;
 }
 
-.epage-ctn-03-carousel-foot-date img {
-    width: 24px;
-    height: 24px;
+.epage-ctn-03-carousel-foot-date i {
+    color: var(--text-color);
 }
 
 .epage-ctn-03-carousel-foot-btn {
@@ -308,7 +350,7 @@ hr {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 40px;
     color: var(--main-theme);
     text-align: center;
@@ -374,13 +416,15 @@ hr {
     left: 15px;
     background-color: #FFFFFF;
     display: flex;
+    align-items: center;
     padding: 2px 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
 }
 
-.blog-type img {
+.blog-type i {
     margin-right: 12px;
+    color: var(--main-theme);
 }
 
 .blog-type p {
@@ -437,8 +481,8 @@ p.ebt-maintext {
     justify-content: space-between;
 }
 
-.read-more img {
-    width: 12px;
+.read-more i {
+    color: var(--text-color);
 }
 
 .ebt-belowtext p {
@@ -468,6 +512,9 @@ p.ebt-maintext {
     }
 }
 @media (max-width: 1000px) {
+    #epage-ctn-01-image {
+        transform: scale(0.7);
+    }
     #epage-ctn-01, .eb-body {
         grid-template-columns: 1fr;
         padding-top: 100px;
@@ -479,6 +526,7 @@ p.ebt-maintext {
         width: calc(100% - 20px);
         margin: auto;
     }
+    
 
     #epage-ctn-03 {
         padding: 10px;
@@ -507,6 +555,9 @@ p.ebt-maintext {
 }
 
 @media (max-width: 600px) {
+    #epage-ctn-01-image {
+        transform: scale(0.50);
+    }
     #epage-ctn-01-text {
         width: 50%;
         padding: 15px;
