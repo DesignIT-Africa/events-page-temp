@@ -13,7 +13,7 @@ body {
 }
 
 .epage-body {
-    background: linear-gradient(to bottom, var(--main-theme), #fff), linear-gradient(to top, #000, var(--main-theme));
+    background: linear-gradient(var(--main-theme), #fff, var(--main-theme));
 }
 
 #epage-ctn-01 {
