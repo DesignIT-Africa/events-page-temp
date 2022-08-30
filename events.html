@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Added Poppins and Bootstrap for development purpose, remove at will for production. Also added Owl Carousel since Zahra's design can't be handled with Bootstrap -->
@@ -34,6 +34,7 @@
   <title>DesignIT Africa - Events</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DesignIT Africa - Events">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
           <p>Here at DesignIT Africa, We hold events throughout the course of the year. Below are past, ongoing and
             upcoming events. </p>
         </div>
-        <div id="epage-ctn-01-image"><img loading="lazy" height="600" width="600" alt=" "
+        <div id="epage-ctn-01-image"><img alt="" loading="lazy" height="600" width="600" alt=" "
             src="https://res.cloudinary.com/designitafrica/image/upload/v1659592497/website%20media/About%20Us%20Page%20Pictures/2_cs8mgk.png">
         </div>
       </div>
@@ -79,13 +80,13 @@
         <div id="epage-ctn-02-carousel-controls">
           <a class="ndc" href="#epage-ctn-02-carousel" role="button" data-slide="prev">
             <span id="carousel-control-prev-icon" aria-hidden="true">
-              <img src="prev.svg" />
+              <img alt="prev" src="prev.svg" />
             </span>
             <span class="sr-only">Previous</span>
           </a>
           <a class="ndc" href="#epage-ctn-02-carousel" role="button" data-slide="next">
             <span id="carousel-control-next-icon" aria-hidden="true">
-              <img src="next.svg" />
+              <img alt="next" src="next.svg" />
             </span>
             <span class="sr-only">Next</span>
           </a>
@@ -101,7 +102,7 @@
           <div id="epage-ctn-03-carousel" class="owl-carousel owl-theme">
             <!-- TODO: Use Django to automate Previous events -->
             <div class="epage-ctn-03-carousel-item item">
-              <div class="epage-ctn-03-carousel-img"><img src="left 1.jpg" /></div>
+              <div class="epage-ctn-03-carousel-img"><img alt="" src="left 1.jpg" /></div>
               <div class="epage-ctn-03-carousel-text">
                 <p class="epage-ctn-03-carousel-text-title">TECH COHORT 1.0</p>
                 <p class="epage-ctn-03-carousel-text-content">Laboris exercitation nostrud ipsum ex culpa exercitation
@@ -119,7 +120,7 @@
               </div>
             </div>
             <div class="epage-ctn-03-carousel-item item">
-              <div class="epage-ctn-03-carousel-img"><img src="left 1.jpg" /></div>
+              <div class="epage-ctn-03-carousel-img"><img alt="" src="left 1.jpg" /></div>
               <div class="epage-ctn-03-carousel-text">
                 <p class="epage-ctn-03-carousel-text-title">TECH COHORT 1.0</p>
                 <p class="epage-ctn-03-carousel-text-content">Laboris exercitation nostrud ipsum ex culpa exercitation
@@ -137,7 +138,7 @@
               </div>
             </div>
             <div class="epage-ctn-03-carousel-item item">
-              <div class="epage-ctn-03-carousel-img"><img src="left 1.jpg" /></div>
+              <div class="epage-ctn-03-carousel-img"><img alt="" src="left 1.jpg" /></div>
               <div class="epage-ctn-03-carousel-text">
                 <p class="epage-ctn-03-carousel-text-title">TECH COHORT 1.0</p>
                 <p class="epage-ctn-03-carousel-text-content">Laboris exercitation nostrud ipsum ex culpa exercitation
@@ -155,7 +156,7 @@
               </div>
             </div>
             <div class="epage-ctn-03-carousel-item item">
-              <div class="epage-ctn-03-carousel-img"><img src="left 1.jpg" /></div>
+              <div class="epage-ctn-03-carousel-img"><img alt="" src="left 1.jpg" /></div>
               <div class="epage-ctn-03-carousel-text">
                 <p class="epage-ctn-03-carousel-text-title">TECH COHORT 1.0</p>
                 <p class="epage-ctn-03-carousel-text-content">Laboris exercitation nostrud ipsum ex culpa exercitation
@@ -173,7 +174,7 @@
               </div>
             </div>
             <div class="epage-ctn-03-carousel-item item">
-              <div class="epage-ctn-03-carousel-img"><img src="left 1.jpg" /></div>
+              <div class="epage-ctn-03-carousel-img"><img alt="" src="left 1.jpg" /></div>
               <div class="epage-ctn-03-carousel-text">
                 <p class="epage-ctn-03-carousel-text-title">TECH COHORT 1.0</p>
                 <p class="epage-ctn-03-carousel-text-content">Laboris exercitation nostrud ipsum ex culpa exercitation
@@ -207,7 +208,7 @@
         <div class="es-body">
           <div class="esb">
             <div class="esbd">
-              <iframe
+              <iframe title="DesignIT Africa Events"
                 src="https://calendar.zoho.com/zc/ui/embed/#calendar=b11e75a84b166a4b9a6abc766f96b0edb62f2807713c093beae684f355a877ae654fd883f6bd6c47168f0b6f73ee7324&title=DesignIT%20Africa%20events&type=1&language=en&timezone=Africa%2FLagos&showTitle=0&showTimezone=1&startingDayOfWeek=0&view=month&showDetail=1&theme=1&showAttendee=0&showSwitchingViews=1&showAllEvents=0"
                 frameBorder="0" scrolling="no"></iframe>
             </div>
@@ -325,24 +326,24 @@
           }
         });
 
-        $('.owl-carousel').on('changed.owl.carousel', function(e) {
+        $('.owl-carousel').on('changed.owl.carousel', function (e) {
+          if(window.matchMedia('(min-width: 1000px)').matches){
+          $('#epage-ctn-03-carousel-cover-right').show();
+          $('#epage-ctn-03-carousel-cover-left').show();
 
-$('#epage-ctn-03-carousel-cover-right-icon').show();
-$('#epage-ctn-03-carousel-cover-left-icon').show();
+          if ((e.page.index + 1) >= e.page.count) {
+            $('#epage-ctn-03-carousel-cover-right').hide();
+          } else {
+            $('#epage-ctn-03-carousel-cover-right').show();
+          }
 
-if ( ( e.page.index + 1 ) >= e.page.count ){
-    $('#epage-ctn-03-carousel-cover-right-icon').hide();
-} else {
-  $('#epage-ctn-03-carousel-cover-right-icon').show();
-}
-
-if ( e.page.index == 0 ){
-    $('#epage-ctn-03-carousel-cover-left-icon').hide();
-} else {
-  $('#epage-ctn-03-carousel-cover-left-icon').show();
-}
-
-});
+          if (e.page.index == 0) {
+            $('#epage-ctn-03-carousel-cover-left').hide();
+          } else {
+            $('#epage-ctn-03-carousel-cover-left').show();
+          }
+        }
+        });
         $('#epage-ctn-03-carousel-cover-left-icon').click(function () {
           owl.trigger('prev.owl.carousel');
         });

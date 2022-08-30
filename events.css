@@ -532,7 +532,7 @@ p.ebt-maintext {
         padding: 10px;
     }
 
-    #epage-ctn-03-carousel-cover {
+    #epage-ctn-03-carousel-cover-left, #epage-ctn-03-carousel-cover-right {
         display: none;
     }
     
