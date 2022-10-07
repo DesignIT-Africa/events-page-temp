@@ -47,6 +47,7 @@ body {
 }
 
 #epage-ctn-02 {
+    padding: 20px;
     height: max-content;
 }
 
@@ -62,8 +63,11 @@ body {
 }
 
 #epage-ctn-02-carousel {
-    width: 50%;
     margin: auto;
+}
+
+#epage-ctn-02-carousel .owl-dots{
+    display: none;
 }
 
 .epage-carousel-item {
@@ -90,6 +94,11 @@ body {
 
 .ndc {
     text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 ol.carousel-indicators {
